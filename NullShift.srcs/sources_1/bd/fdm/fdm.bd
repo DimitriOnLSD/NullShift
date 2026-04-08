@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0xE251CDED4B68B42D",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../NullShift.gen/sources_1/bd/fdm",
       "name": "fdm",
@@ -21,7 +21,31 @@
       "gain_0": "",
       "gain_1": "",
       "binaray_data_stream_1": "",
-      "binary_data_stream_2": ""
+      "binary_data_stream_2": "",
+      "clk_wiz": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "reset_rtl": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
     },
     "components": {
       "line_coder": {
@@ -157,20 +181,56 @@
         "xci_path": "ip\\fdm_c_shift_ram_0_2\\fdm_c_shift_ram_0_2.xci",
         "inst_hier_path": "binary_data_stream_2",
         "has_run_ip_tcl": "true"
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "17",
+        "xci_name": "fdm_clk_wiz_7",
+        "xci_path": "ip\\fdm_clk_wiz_7\\fdm_clk_wiz_7.xci",
+        "inst_hier_path": "clk_wiz",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "100.0"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
       }
     },
     "nets": {
       "Net": {
         "ports": [
+          "clk_wiz/clk_out1",
+          "binary_data_stream_2/CLK",
+          "line_coder/CLK",
           "mult_gen_0/CLK",
           "mult_gen_1/CLK",
-          "c_addsub_0/CLK"
+          "c_addsub_0/CLK",
+          "binaray_data_stream_1/CLK",
+          "ask_mapper/CLK"
         ]
       },
       "ask_modulator_m_axis_data_tdata": {
         "ports": [
           "ask_modulator/m_axis_data_tdata",
           "mult_gen_1/A"
+        ]
+      },
+      "binaray_data_stream_1_Q": {
+        "ports": [
+          "binaray_data_stream_1/Q",
+          "ask_mapper/D"
+        ]
+      },
+      "binary_data_stream_2_Q": {
+        "ports": [
+          "binary_data_stream_2/Q",
+          "line_coder/D"
         ]
       },
       "mult_gen_0_P": {
@@ -189,6 +249,18 @@
         "ports": [
           "ook_compiler/m_axis_data_tdata",
           "mult_gen_0/B"
+        ]
+      },
+      "reset_rtl_1": {
+        "ports": [
+          "reset_rtl",
+          "clk_wiz/reset"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
         ]
       },
       "xlconstant_0_dout": {
