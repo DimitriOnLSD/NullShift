@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "fdm_fir_compiler_0_0",
-    "cell_name": "fir_compiler_0",
+    "cell_name": "channel_emulator",
     "component_reference": "xilinx.com:ip:fir_compiler:7.2",
     "ip_revision": "26",
     "gen_directory": "../../../../../../NullShift.gen/sources_1/bd/fdm/ip/fdm_fir_compiler_0_0",
@@ -356,5 +356,5 @@
       }
     }
   },
-  "checksum": "56e764e4"
+  "checksum": "69f0c449"
 }

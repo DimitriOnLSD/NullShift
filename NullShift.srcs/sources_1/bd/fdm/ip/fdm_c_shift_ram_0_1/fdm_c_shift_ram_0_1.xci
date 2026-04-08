@@ -1,14 +1,14 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "fdm_c_shift_ram_0_0",
-    "cell_name": "line_coder",
+    "xci_name": "fdm_c_shift_ram_0_1",
+    "cell_name": "binaray_data_stream_1",
     "component_reference": "xilinx.com:ip:c_shift_ram:12.0",
     "ip_revision": "20",
-    "gen_directory": "../../../../../../NullShift.gen/sources_1/bd/fdm/ip/fdm_c_shift_ram_0_0",
+    "gen_directory": "../../../../../../NullShift.gen/sources_1/bd/fdm/ip/fdm_c_shift_ram_0_1",
     "parameters": {
       "component_parameters": {
-        "Component_Name": [ { "value": "fdm_c_shift_ram_0_0", "resolve_type": "user", "usage": "all" } ],
+        "Component_Name": [ { "value": "fdm_c_shift_ram_0_1", "resolve_type": "user", "usage": "all" } ],
         "ShiftRegType": [ { "value": "Fixed_Length", "resolve_type": "user", "usage": "all" } ],
         "OptGoal": [ { "value": "Resources", "resolve_type": "user", "usage": "all" } ],
         "RegLastBit": [ { "value": "true", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
@@ -70,7 +70,7 @@
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "20" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../NullShift.gen/sources_1/bd/fdm/ip/fdm_c_shift_ram_0_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../NullShift.gen/sources_1/bd/fdm/ip/fdm_c_shift_ram_0_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2025.2" } ],
@@ -169,5 +169,5 @@
       }
     }
   },
-  "checksum": "c6b130a8"
+  "checksum": "a4c29dc3"
 }

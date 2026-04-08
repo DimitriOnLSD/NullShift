@@ -10,41 +10,42 @@
       "tool_version": "2025.2"
     },
     "design_tree": {
-      "c_shift_ram_0": "",
-      "dds_compiler_0": "",
-      "fir_compiler_0": "",
+      "line_coder": "",
+      "ook_compiler": "",
+      "channel_emulator": "",
       "c_addsub_0": "",
-      "dds_compiler_1": "",
-      "c_shift_ram_1": "",
-      "cmpy_0": "",
+      "ask_modulator": "",
+      "ask_mapper": "",
       "mult_gen_0": "",
       "mult_gen_1": "",
-      "xlconstant_0": "",
-      "xlconstant_1": ""
+      "gain_0": "",
+      "gain_1": "",
+      "binaray_data_stream_1": "",
+      "binary_data_stream_2": ""
     },
     "components": {
-      "c_shift_ram_0": {
+      "line_coder": {
         "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
         "ip_revision": "20",
         "xci_name": "fdm_c_shift_ram_0_0",
         "xci_path": "ip\\fdm_c_shift_ram_0_0\\fdm_c_shift_ram_0_0.xci",
-        "inst_hier_path": "c_shift_ram_0",
+        "inst_hier_path": "line_coder",
         "has_run_ip_tcl": "true"
       },
-      "dds_compiler_0": {
+      "ook_compiler": {
         "vlnv": "xilinx.com:ip:dds_compiler:6.0",
         "ip_revision": "28",
         "xci_name": "fdm_dds_compiler_0_0",
         "xci_path": "ip\\fdm_dds_compiler_0_0\\fdm_dds_compiler_0_0.xci",
-        "inst_hier_path": "dds_compiler_0",
+        "inst_hier_path": "ook_compiler",
         "has_run_ip_tcl": "true"
       },
-      "fir_compiler_0": {
+      "channel_emulator": {
         "vlnv": "xilinx.com:ip:fir_compiler:7.2",
         "ip_revision": "26",
         "xci_name": "fdm_fir_compiler_0_0",
         "xci_path": "ip\\fdm_fir_compiler_0_0\\fdm_fir_compiler_0_0.xci",
-        "inst_hier_path": "fir_compiler_0",
+        "inst_hier_path": "channel_emulator",
         "has_run_ip_tcl": "true"
       },
       "c_addsub_0": {
@@ -53,30 +54,39 @@
         "xci_name": "fdm_c_addsub_0_0",
         "xci_path": "ip\\fdm_c_addsub_0_0\\fdm_c_addsub_0_0.xci",
         "inst_hier_path": "c_addsub_0",
-        "has_run_ip_tcl": "true"
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "A_Width": {
+            "value": "23"
+          },
+          "B_Value": {
+            "value": "00000000000000000000000"
+          },
+          "B_Width": {
+            "value": "23"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "23"
+          }
+        }
       },
-      "dds_compiler_1": {
+      "ask_modulator": {
         "vlnv": "xilinx.com:ip:dds_compiler:6.0",
         "ip_revision": "28",
         "xci_name": "fdm_dds_compiler_1_0",
         "xci_path": "ip\\fdm_dds_compiler_1_0\\fdm_dds_compiler_1_0.xci",
-        "inst_hier_path": "dds_compiler_1",
+        "inst_hier_path": "ask_modulator",
         "has_run_ip_tcl": "true"
       },
-      "c_shift_ram_1": {
+      "ask_mapper": {
         "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
         "ip_revision": "20",
         "xci_name": "fdm_c_shift_ram_1_0",
         "xci_path": "ip\\fdm_c_shift_ram_1_0\\fdm_c_shift_ram_1_0.xci",
-        "inst_hier_path": "c_shift_ram_1",
-        "has_run_ip_tcl": "true"
-      },
-      "cmpy_0": {
-        "vlnv": "xilinx.com:ip:cmpy:6.0",
-        "ip_revision": "27",
-        "xci_name": "fdm_cmpy_0_0",
-        "xci_path": "ip\\fdm_cmpy_0_0\\fdm_cmpy_0_0.xci",
-        "inst_hier_path": "cmpy_0",
+        "inst_hier_path": "ask_mapper",
         "has_run_ip_tcl": "true"
       },
       "mult_gen_0": {
@@ -85,7 +95,12 @@
         "xci_name": "fdm_mult_gen_0_0",
         "xci_path": "ip\\fdm_mult_gen_0_0\\fdm_mult_gen_0_0.xci",
         "inst_hier_path": "mult_gen_0",
-        "has_run_ip_tcl": "true"
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "PortAWidth": {
+            "value": "7"
+          }
+        }
       },
       "mult_gen_1": {
         "vlnv": "xilinx.com:ip:mult_gen:12.0",
@@ -95,24 +110,69 @@
         "inst_hier_path": "mult_gen_1",
         "has_run_ip_tcl": "true"
       },
-      "xlconstant_0": {
+      "gain_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "ip_revision": "10",
         "xci_name": "fdm_xlconstant_0_0",
         "xci_path": "ip\\fdm_xlconstant_0_0\\fdm_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0",
-        "has_run_ip_tcl": "true"
+        "inst_hier_path": "gain_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "100"
+          },
+          "CONST_WIDTH": {
+            "value": "7"
+          }
+        }
       },
-      "xlconstant_1": {
+      "gain_1": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "ip_revision": "10",
         "xci_name": "fdm_xlconstant_1_0",
         "xci_path": "ip\\fdm_xlconstant_1_0\\fdm_xlconstant_1_0.xci",
-        "inst_hier_path": "xlconstant_1",
+        "inst_hier_path": "gain_1",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "100"
+          },
+          "CONST_WIDTH": {
+            "value": "7"
+          }
+        }
+      },
+      "binaray_data_stream_1": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "ip_revision": "20",
+        "xci_name": "fdm_c_shift_ram_0_1",
+        "xci_path": "ip\\fdm_c_shift_ram_0_1\\fdm_c_shift_ram_0_1.xci",
+        "inst_hier_path": "binaray_data_stream_1",
+        "has_run_ip_tcl": "true"
+      },
+      "binary_data_stream_2": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "ip_revision": "20",
+        "xci_name": "fdm_c_shift_ram_0_2",
+        "xci_path": "ip\\fdm_c_shift_ram_0_2\\fdm_c_shift_ram_0_2.xci",
+        "inst_hier_path": "binary_data_stream_2",
         "has_run_ip_tcl": "true"
       }
     },
     "nets": {
+      "Net": {
+        "ports": [
+          "mult_gen_0/CLK",
+          "mult_gen_1/CLK",
+          "c_addsub_0/CLK"
+        ]
+      },
+      "ask_modulator_m_axis_data_tdata": {
+        "ports": [
+          "ask_modulator/m_axis_data_tdata",
+          "mult_gen_1/A"
+        ]
+      },
       "mult_gen_0_P": {
         "ports": [
           "mult_gen_0/P",
@@ -125,15 +185,21 @@
           "c_addsub_0/A"
         ]
       },
+      "ook_compiler_m_axis_data_tdata": {
+        "ports": [
+          "ook_compiler/m_axis_data_tdata",
+          "mult_gen_0/B"
+        ]
+      },
       "xlconstant_0_dout": {
         "ports": [
-          "xlconstant_0/dout",
+          "gain_0/dout",
           "mult_gen_1/B"
         ]
       },
       "xlconstant_1_dout": {
         "ports": [
-          "xlconstant_1/dout",
+          "gain_1/dout",
           "mult_gen_0/A"
         ]
       }

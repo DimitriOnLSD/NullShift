@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "fdm_dds_compiler_1_0",
-    "cell_name": "dds_compiler_1",
+    "cell_name": "ask_modulator",
     "component_reference": "xilinx.com:ip:dds_compiler:6.0",
     "ip_revision": "28",
     "gen_directory": "../../../../../../NullShift.gen/sources_1/bd/fdm/ip/fdm_dds_compiler_1_0",
@@ -366,5 +366,5 @@
       }
     }
   },
-  "checksum": "7b23d2c3"
+  "checksum": "96542acc"
 }
