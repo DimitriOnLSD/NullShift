@@ -1,0 +1,416 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Apr 15 22:08:21 2026
+# Process ID         : 18928
+# Current directory  : C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1
+# Command line       : vivado.exe -log fdm_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fdm_wrapper.tcl
+# Log file           : C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/fdm_wrapper.vds
+# Journal file       : C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1\vivado.jou
+# Running On         : LENOVO-LOQ-15IRX9
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16873 MB
+# Swap memory        : 16873 MB
+# Total Virtual      : 33747 MB
+# Available Virtual  : 14844 MB
+#-----------------------------------------------------------
+source fdm_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.srcs/sources_1/bd/fdm/fdm.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ fdm_xlconstant_0_0
+fdm_xlconstant_1_0
+fdm_xlslice_0_1
+fdm_xlslice_0_2
+fdm_xlconstant_0_1
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.srcs/utils_1/imports/synth_1/fdm_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.srcs/utils_1/imports/synth_1/fdm_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fdm_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14500
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1366.449 ; gain = 540.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fdm_wrapper' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/hdl/fdm_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fdm' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fdm_DA2RefComp_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_DA2RefComp_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_DA2RefComp_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_DA2RefComp_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_blk_mem_gen_1_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_blk_mem_gen_1_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_dds_compiler_1_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_dds_compiler_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_dds_compiler_1_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_dds_compiler_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'fdm_dds_compiler_1_0' is unconnected for instance 'ask_modulator' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:76]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tvalid' of module 'fdm_dds_compiler_1_0' is unconnected for instance 'ask_modulator' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:76]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tdata' of module 'fdm_dds_compiler_1_0' is unconnected for instance 'ask_modulator' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:76]
+WARNING: [Synth 8-7023] instance 'ask_modulator' of module 'fdm_dds_compiler_1_0' has 5 connections declared, but only 2 given [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:76]
+INFO: [Synth 8-6157] synthesizing module 'fdm_blk_mem_gen_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_blk_mem_gen_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:89]
+INFO: [Synth 8-6157] synthesizing module 'fdm_blk_mem_gen_0_3' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_blk_mem_gen_0_3' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_0_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'doutb' of module 'fdm_blk_mem_gen_0_3' is unconnected for instance 'bin_data_stream_2' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:89]
+WARNING: [Synth 8-7023] instance 'bin_data_stream_2' of module 'fdm_blk_mem_gen_0_3' has 9 connections declared, but only 8 given [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:89]
+INFO: [Synth 8-6157] synthesizing module 'fdm_c_addsub_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_c_addsub_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_c_addsub_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_c_addsub_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_fir_compiler_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_fir_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_fir_compiler_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_fir_compiler_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_data_tready' of module 'fdm_fir_compiler_0_0' is unconnected for instance 'channel_emulator' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:104]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'fdm_fir_compiler_0_0' is unconnected for instance 'channel_emulator' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:104]
+WARNING: [Synth 8-7023] instance 'channel_emulator' of module 'fdm_fir_compiler_0_0' has 6 connections declared, but only 4 given [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:104]
+INFO: [Synth 8-6157] synthesizing module 'fdm_clk_wiz_7' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_clk_wiz_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_clk_wiz_7' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_clk_wiz_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_xlconstant_0_0' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlconstant_0_0/synth/fdm_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_xlconstant_0_0' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlconstant_0_0/synth/fdm_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fdm_xlconstant_1_0' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlconstant_1_0/synth/fdm_xlconstant_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_xlconstant_1_0' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlconstant_1_0/synth/fdm_xlconstant_1_0.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:118]
+INFO: [Synth 8-6157] synthesizing module 'fdm_ila_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_ila_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:122]
+INFO: [Synth 8-6157] synthesizing module 'fdm_blk_mem_gen_1_1' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_blk_mem_gen_1_1' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_blk_mem_gen_1_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'douta' of module 'fdm_blk_mem_gen_1_1' is unconnected for instance 'line_coder' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:122]
+WARNING: [Synth 8-7023] instance 'line_coder' of module 'fdm_blk_mem_gen_1_1' has 6 connections declared, but only 5 given [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:122]
+INFO: [Synth 8-6157] synthesizing module 'fdm_mult_gen_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mult_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_mult_gen_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mult_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_mult_gen_1_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mult_gen_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_mult_gen_1_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mult_gen_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_mult_gen_2_1' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mult_gen_2_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_mult_gen_2_1' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mult_gen_2_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_mux_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mux_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_mux_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_mux_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdm_dds_compiler_0_0' [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_dds_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_dds_compiler_0_0' (0#1) [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/.Xil/Vivado-18928-LENOVO-LOQ-15IRX9/realtime/fdm_dds_compiler_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'fdm_dds_compiler_0_0' is unconnected for instance 'ook_compiler' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:154]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tvalid' of module 'fdm_dds_compiler_0_0' is unconnected for instance 'ook_compiler' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:154]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tdata' of module 'fdm_dds_compiler_0_0' is unconnected for instance 'ook_compiler' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:154]
+WARNING: [Synth 8-7023] instance 'ook_compiler' of module 'fdm_dds_compiler_0_0' has 5 connections declared, but only 2 given [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:154]
+INFO: [Synth 8-6157] synthesizing module 'fdm_xlconstant_0_1' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlconstant_0_1/synth/fdm_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_xlconstant_0_1' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlconstant_0_1/synth/fdm_xlconstant_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fdm_xlslice_0_1' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlslice_0_1/synth/fdm_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_xlslice_0_1' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlslice_0_1/synth/fdm_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fdm_xlslice_0_2' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlslice_0_2/synth/fdm_xlslice_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_xlslice_0_2' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_xlslice_0_2/synth/fdm_xlslice_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'fdm' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fdm_wrapper' (0#1) [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/hdl/fdm_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mult_gen_2'. This will prevent further optimization [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:138]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux_0'. This will prevent further optimization [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:143]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:118]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ask_mapper'. This will prevent further optimization [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/synth/fdm.v:69]
+WARNING: [Synth 8-7129] Port Din[23] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1489.035 ; gain = 663.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1489.035 ; gain = 663.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1489.035 ; gain = 663.152
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1489.035 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_dds_compiler_0_0/fdm_dds_compiler_0_0/fdm_dds_compiler_1_0_in_context.xdc] for cell 'fdm_i/ook_compiler'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_dds_compiler_0_0/fdm_dds_compiler_0_0/fdm_dds_compiler_1_0_in_context.xdc] for cell 'fdm_i/ook_compiler'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_fir_compiler_0_0/fdm_fir_compiler_0_0/fdm_fir_compiler_0_0_in_context.xdc] for cell 'fdm_i/channel_emulator'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_fir_compiler_0_0/fdm_fir_compiler_0_0/fdm_fir_compiler_0_0_in_context.xdc] for cell 'fdm_i/channel_emulator'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_c_addsub_0_0/fdm_c_addsub_0_0/fdm_c_addsub_0_0_in_context.xdc] for cell 'fdm_i/c_addsub_0'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_c_addsub_0_0/fdm_c_addsub_0_0/fdm_c_addsub_0_0_in_context.xdc] for cell 'fdm_i/c_addsub_0'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_dds_compiler_1_0/fdm_dds_compiler_1_0/fdm_dds_compiler_1_0_in_context.xdc] for cell 'fdm_i/ask_modulator'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_dds_compiler_1_0/fdm_dds_compiler_1_0/fdm_dds_compiler_1_0_in_context.xdc] for cell 'fdm_i/ask_modulator'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mult_gen_0_0/fdm_mult_gen_0_0/fdm_mult_gen_0_0_in_context.xdc] for cell 'fdm_i/mult_gen_0'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mult_gen_0_0/fdm_mult_gen_0_0/fdm_mult_gen_0_0_in_context.xdc] for cell 'fdm_i/mult_gen_0'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mult_gen_1_0/fdm_mult_gen_1_0/fdm_mult_gen_1_0_in_context.xdc] for cell 'fdm_i/mult_gen_1'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mult_gen_1_0/fdm_mult_gen_1_0/fdm_mult_gen_1_0_in_context.xdc] for cell 'fdm_i/mult_gen_1'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_clk_wiz_7/fdm_clk_wiz_7/fdm_clk_wiz_7_in_context.xdc] for cell 'fdm_i/clk_wiz'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_clk_wiz_7/fdm_clk_wiz_7/fdm_clk_wiz_7_in_context.xdc] for cell 'fdm_i/clk_wiz'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mux_0_0/fdm_mux_0_0/fdm_mux_0_0_in_context.xdc] for cell 'fdm_i/mux_0'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mux_0_0/fdm_mux_0_0/fdm_mux_0_0_in_context.xdc] for cell 'fdm_i/mux_0'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_DA2RefComp_0_0/fdm_DA2RefComp_0_0/fdm_DA2RefComp_0_0_in_context.xdc] for cell 'fdm_i/DA2RefComp_0'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_DA2RefComp_0_0/fdm_DA2RefComp_0_0/fdm_DA2RefComp_0_0_in_context.xdc] for cell 'fdm_i/DA2RefComp_0'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mult_gen_2_1/fdm_mult_gen_2_1/fdm_mult_gen_2_1_in_context.xdc] for cell 'fdm_i/mult_gen_2'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_mult_gen_2_1/fdm_mult_gen_2_1/fdm_mult_gen_2_1_in_context.xdc] for cell 'fdm_i/mult_gen_2'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_ila_0_0/fdm_ila_0_0/fdm_ila_0_0_in_context.xdc] for cell 'fdm_i/ila_0'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_ila_0_0/fdm_ila_0_0/fdm_ila_0_0_in_context.xdc] for cell 'fdm_i/ila_0'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_0_0/fdm_blk_mem_gen_0_0/fdm_blk_mem_gen_0_0_in_context.xdc] for cell 'fdm_i/bin_data_stream_1'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_0_0/fdm_blk_mem_gen_0_0/fdm_blk_mem_gen_0_0_in_context.xdc] for cell 'fdm_i/bin_data_stream_1'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_0_3/fdm_blk_mem_gen_0_3/fdm_blk_mem_gen_0_3_in_context.xdc] for cell 'fdm_i/bin_data_stream_2'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_0_3/fdm_blk_mem_gen_0_3/fdm_blk_mem_gen_0_3_in_context.xdc] for cell 'fdm_i/bin_data_stream_2'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_1_0/fdm_blk_mem_gen_1_0/fdm_blk_mem_gen_1_0_in_context.xdc] for cell 'fdm_i/ask_mapper'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_1_0/fdm_blk_mem_gen_1_0/fdm_blk_mem_gen_1_0_in_context.xdc] for cell 'fdm_i/ask_mapper'
+Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_1_1/fdm_blk_mem_gen_1_1/fdm_blk_mem_gen_1_0_in_context.xdc] for cell 'fdm_i/line_coder'
+Finished Parsing XDC File [c:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.gen/sources_1/bd/fdm/ip/fdm_blk_mem_gen_1_1/fdm_blk_mem_gen_1_1/fdm_blk_mem_gen_1_0_in_context.xdc] for cell 'fdm_i/line_coder'
+Parsing XDC File [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.srcs/constrs_1/imports/NullShift/pauloportas.xdc]
+Finished Parsing XDC File [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.srcs/constrs_1/imports/NullShift/pauloportas.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.srcs/constrs_1/imports/NullShift/pauloportas.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fdm_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fdm_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1489.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1489.035 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fdm_i/ask_mapper' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fdm_i/bin_data_stream_1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fdm_i/bin_data_stream_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fdm_i/line_coder' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1489.035 ; gain = 663.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1489.035 ; gain = 663.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1489.035 ; gain = 663.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1489.035 ; gain = 663.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port Din[23] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module fdm_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module fdm_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module fdm_xlslice_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1492.398 ; gain = 666.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clock'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1659.656 ; gain = 833.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1659.730 ; gain = 833.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1669.625 ; gain = 843.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |fdm_DA2RefComp_0_0   |         1|
+|2     |fdm_blk_mem_gen_1_0  |         1|
+|3     |fdm_dds_compiler_1_0 |         1|
+|4     |fdm_blk_mem_gen_0_0  |         1|
+|5     |fdm_blk_mem_gen_0_3  |         1|
+|6     |fdm_c_addsub_0_0     |         1|
+|7     |fdm_fir_compiler_0_0 |         1|
+|8     |fdm_clk_wiz_7        |         1|
+|9     |fdm_ila_0_0          |         1|
+|10    |fdm_blk_mem_gen_1_1  |         1|
+|11    |fdm_mult_gen_0_0     |         1|
+|12    |fdm_mult_gen_1_0     |         1|
+|13    |fdm_mult_gen_2_1     |         1|
+|14    |fdm_mux_0_0          |         1|
+|15    |fdm_dds_compiler_0_0 |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |fdm_DA2RefComp_0   |     1|
+|2     |fdm_blk_mem_gen_0  |     2|
+|4     |fdm_blk_mem_gen_1  |     2|
+|6     |fdm_c_addsub_0     |     1|
+|7     |fdm_clk_wiz        |     1|
+|8     |fdm_dds_compiler_0 |     1|
+|9     |fdm_dds_compiler_1 |     1|
+|10    |fdm_fir_compiler_0 |     1|
+|11    |fdm_ila_0          |     1|
+|12    |fdm_mult_gen_0     |     1|
+|13    |fdm_mult_gen_1     |     1|
+|14    |fdm_mult_gen_2     |     1|
+|15    |fdm_mux_0          |     1|
+|16    |IBUF               |     4|
+|17    |OBUF               |     5|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1919.102 ; gain = 1093.219
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1928.242 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1931.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c06dc166
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1931.883 ; gain = 1338.289
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1931.883 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Paulo/Desktop/EE_Masters/EC/NullShift/NullShift.runs/synth_1/fdm_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fdm_wrapper_utilization_synth.rpt -pb fdm_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 15 22:08:58 2026...

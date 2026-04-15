@@ -1,0 +1,684 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+// Date        : Wed Apr 15 21:34:28 2026
+// Host        : LENOVO-LOQ-15IRX9 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ fdm_c_shift_ram_0_0_sim_netlist.v
+// Design      : fdm_c_shift_ram_0_0
+// Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
+//               or synthesized. This netlist cannot be used for SDF annotated simulation.
+// Device      : xc7z020clg400-1
+// --------------------------------------------------------------------------------
+`timescale 1 ps / 1 ps
+
+(* CHECK_LICENSE_TYPE = "fdm_c_shift_ram_0_0,c_shift_ram_v12_0_20,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "c_shift_ram_v12_0_20,Vivado 2025.2" *) 
+(* NotValidForBitStream *)
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
+   (D,
+    CLK,
+    Q);
+  (* x_interface_info = "xilinx.com:signal:data:1.0 d_intf DATA" *) (* x_interface_mode = "slave d_intf" *) (* x_interface_parameter = "XIL_INTERFACENAME d_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 16}" *) input [15:0]D;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_intf CLK" *) (* x_interface_mode = "slave clk_intf" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF q_intf:sinit_intf:sset_intf:d_intf:a_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_clk_out1, INSERT_VIP 0" *) input CLK;
+  (* x_interface_info = "xilinx.com:signal:data:1.0 q_intf DATA" *) (* x_interface_mode = "master q_intf" *) (* x_interface_parameter = "XIL_INTERFACENAME q_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 16}" *) output [15:0]Q;
+
+  wire CLK;
+  wire [15:0]D;
+  wire [15:0]Q;
+
+  (* c_addr_width = "4" *) 
+  (* c_ainit_val = "0000000000000000" *) 
+  (* c_default_data = "0000000000000000" *) 
+  (* c_depth = "16" *) 
+  (* c_elaboration_dir = "./" *) 
+  (* c_has_a = "0" *) 
+  (* c_has_ce = "0" *) 
+  (* c_has_sclr = "0" *) 
+  (* c_has_sinit = "0" *) 
+  (* c_has_sset = "0" *) 
+  (* c_mem_init_file = "no_coe_file_loaded" *) 
+  (* c_opt_goal = "0" *) 
+  (* c_parser_type = "0" *) 
+  (* c_read_mif = "0" *) 
+  (* c_reg_last_bit = "1" *) 
+  (* c_shift_type = "0" *) 
+  (* c_sinit_val = "0000000000000000" *) 
+  (* c_sync_enable = "0" *) 
+  (* c_sync_priority = "1" *) 
+  (* c_verbosity = "0" *) 
+  (* c_width = "16" *) 
+  (* c_xdevicefamily = "zynq" *) 
+  (* downgradeipidentifiedwarnings = "yes" *) 
+  (* is_du_within_envelope = "true" *) 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_c_shift_ram_v12_0_20 U0
+       (.A({1'b0,1'b0,1'b0,1'b0}),
+        .CE(1'b1),
+        .CLK(CLK),
+        .D(D),
+        .Q(Q),
+        .SCLR(1'b0),
+        .SINIT(1'b0),
+        .SSET(1'b0));
+endmodule
+`pragma protect begin_protected
+`pragma protect version = 1
+`pragma protect encrypt_agent = "XILINX"
+`pragma protect encrypt_agent_info = "Xilinx Encryption Tool 2025.2"
+`pragma protect key_keyowner="Synopsys", key_keyname="SNPS-VCS-RSA-2", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`pragma protect key_block
+CLe4hIBuPoGhpVl7WcpdPrkOqRB4Jx17xO25OhKMzcudPtO7fyzQcLT1Hwfd0j30ICv/93MrjmYk
+VkhpZR9EpEAjIIkPAj6Uz1DaF5W+ZmnNsekRAyk+3Lm7DCkEdldRunmAMklLXDYSE0BHPyNZb6/O
+1fVccxPwFw6jSpxzyJ8=
+
+`pragma protect key_keyowner="Aldec", key_keyname="ALDEC15_001", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+ACw/whBd4sJPjEXsPWy+A9hsrulOjhl03yGnO0wIJb/8lOFB6tmCM94OcdNwiMaV6kg8YzX1Zq7/
+NE2RxoRW0a7WAr7xvZPy265UGSafgRDCpO1KBNNkYutsmHT7D2OLTvT4FaHp5hZFRk+z43Ve8ygQ
+YJTKyx5ivjb/80JLBvE8hnVCpYkZN6VnhMHuf1XLNa0oxWLQ2z+ODAbTE0KVd6D6DWycqrbcGtw9
+RfO96KL4+hS2NraPUOWRVGCJvHh+C9oFURQ8sSL1vIHuy9U+A+C/triRYJ4Yl8X5mPDgDSLb9GaP
+flIuoeMAprVt1E/Bi7vgnF6kuuRtRrRwCbGG1A==
+
+`pragma protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VELOCE-RSA", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`pragma protect key_block
+WhGTCsy16/t+nTOk+CGv7tpQem4v8f0JcfhtmHJKBQmUKRgMWECn1vAxv7cTlF5fBXBuNPE5ekvE
+eE5xvFBz6Hn8xUu09f8xFM1K5WhbovRkMP3+0G0ookHnjX6DsYKCCqav35emaqOkBS5JhVj2EBPk
+XLtGUbRCypldy9j1hdo=
+
+`pragma protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VERIF-SIM-RSA-2", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+HTqbg+eKkopQi5dj/L+szqmPwRpBkCcaMjACO+UpXthtee/no4xSMcGn8abIY3SPv4TzrnuqqXPm
+0AF2N3wLbDTLOGfRyerYPQtOSICnY0YK1FpPbRpt8J37qRX06v29OCgAKQCRzqcyktN979XHA61i
+y9kXKs0ecYFb/aEJn+r/Ms4/zkik5QDSibn9rXgrCIaAq3oV/qy4/eOC1I7HxFJ7pQLvD6TaOwrX
+4JOp3lWwPc+YVayAWfwfSM8th7MZKBhpSD1StLeBRJc4CJ5oDLwaMgHEFCXxx3pyxq8QdKSuHOu3
+Wi8mjTwcR+O/8mCaI/EQL04GZntygGZa6NRnQQ==
+
+`pragma protect key_keyowner="Real Intent", key_keyname="RI-RSA-KEY-1", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+o91QaUL83RhelLkEm4+751/SyYIekusmli7rQ/VnKAUITjkJaEGeiMiekUqrom206GlehlLCRUuJ
+Qk6ai4cQrpKj2AErAd0Y5kUpeM5RS+aWpFjtOYrSHMdr4rMfgbsw35qJ6v9hjgJLVLLd2hyabIYi
+/IO+Syqy221cIW0MUUpzoOJ9CjxdiirdkOfTk4p5NvXD0hVLjTWo5izC8MmrhTohoXTCLeDPBtni
+h9yjKz34xbfDJ73edDWDKZuzkcksNcD8JDufI8TXjti6zIBBimw59rFhS2J51ljYPnYfZPiVePJ5
+N7uOtLgm5YB9EYVkYBImzlegfvfeWKMlMPTN2Q==
+
+`pragma protect key_keyowner="Xilinx", key_keyname="xilinxt_2025.1-2029.x", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+lJKy9Zjha63A0h02ApuEz30etxi10kyaT0MM37kT8C079RoQxr/jzSdPRVB6DZEoEoxq3B3ZtFpY
+YjPONLB3n6tCjDMSDQ3C1I1mBthQK6OvvTRuHUxb1l9/aLvQKKbftHNrYBApn8VpMjP6CLucAxZp
++odccI1IV35j33TcUjek8yCrtxEmdzWv0t5wOEQA4WTFVG1fU6/a+jfGVGHnhJhasL7Jl0YilFPM
+HWd3rJlyr2xUSar0v6pd0AVRt6yFuPoCpA/gavX0kZRv+AugezxEfo89yWvJY2XTRZkZi3hMrZuv
+vLK4usOzcbsPeMWzlO01N6DMHirnppE7yicsAA==
+
+`pragma protect key_keyowner="Metrics Technologies Inc.", key_keyname="DSim", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+qZguQpkzQaubvif4ozJshLhSpVr4NjQRAvIToSXk4wKAhLoTGGfhff6h7uytylGeHmy/9jn719Sv
+HAjAigAvx8FgkAdQ9HshMaw6B/CLhf7qqwtfgiEb8k4WEUmEBTliot58LPV7jCEMD1VBzZWYR4K/
+F/3P7X3moGjkrFh9KcmMY5GwF7k9LuqZmEI6DK0O8ZCX0hTQnQ2olSPRWHDbVMSNk21ob6q2E7m5
+xpDVITSJEGo0sugVShTUXPzIS2aLKbIkU7M7Hafar7cSxwCvM01LmXbK2kk/TJ1BnxjpTLKgqxru
+qHGOZsfM5HZn/M3rQKeaLTsgoxJg0TzUyDcG2Q==
+
+`pragma protect key_keyowner="Atrenta", key_keyname="ATR-SG-RSA-1", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=384)
+`pragma protect key_block
+hKe8IASictRpxK+UNDyBjdExv+cunUPc6ZpI+7czTzAehV4HfB+YDHOd05j6V2WSrIfjaa5Yc1RS
+G3r38XeIaYh1ZL1ZSXdIVLclvWkAD0ZTUVklwYY6ca20tDHHAciXUrro3jg9kGe8H2Gojjw+VQZC
+vGGdV4/DF3pjMdpz4nyJJWNfnYLPmx19+G3AsjJsk77LkeQJ3ac7KA942yZdeDmv4Gv409a95Tsb
+ybgnN5fxmPfJ1KacG4k/Zu07i7vPA7/85FRrgptHJL0ytlZgmOydqGwz345i+KR6+tR6P3ZfO0s6
+zos96acnjsr2RnP6pIJ30EKJj+IMY98YqW+6wBHZ1tOwA0LCIHrVhIyGe0B5IXV4RAxNY/K/8cZ4
+j/W2apPE52Pk/hvYFtfyEVf1mS/lGq/t2LznNsZMt82q93Jb8hxwC6Zd8lrmm2hfqYfOAmlZmf6O
+EfYHOP1GurKAmfr07eaBzMSZGJa/fC0AncpmpYD7OL9jcP2lP5UBi+qa
+
+`pragma protect key_keyowner="Cadence Design Systems.", key_keyname="CDS_RSA_KEY_VER_1", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+HO+y/HjEaXV9is2kIeddm5ja325WYl9z3UGUIfNECIbhm1CsOvhNxo06AGFh3AtmMj1fkyl7FpO4
+5p6qJPGuMnf7KaoL2lbPdT1FmXinUUneD7TyneDl5s/cvecL9iNEtBuembSpR8uFQlqW3j5MnIU0
+UISBysTQ8EGO9RDHkRKXJVBUPunFpCoxViEHDwuLeOfZnsSUNCm1TQkVN6lCJVpqMXGrell2v+/D
++BJWT6gUeDiXDTY/zYKkdaf1QckERhcVJjNORVmQDjxTeDa6GJ1AmksSzrK2M3vTp9axAcWS5ak3
+FP7Oo1kxa1CXdzBltgltp8wxugADWHbPbfb6Kw==
+
+`pragma protect data_method = "AES128-CBC"
+`pragma protect encoding = (enctype = "BASE64", line_length = 76, bytes = 2176)
+`pragma protect data_block
+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
+zLu5h6WPwbPXRw==
+`pragma protect end_protected
+`pragma protect begin_protected
+`pragma protect version = 1
+`pragma protect encrypt_agent = "XILINX"
+`pragma protect encrypt_agent_info = "Xilinx Encryption Tool 2025.2"
+`pragma protect key_keyowner="Synopsys", key_keyname="SNPS-VCS-RSA-2", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`pragma protect key_block
+CLe4hIBuPoGhpVl7WcpdPrkOqRB4Jx17xO25OhKMzcudPtO7fyzQcLT1Hwfd0j30ICv/93MrjmYk
+VkhpZR9EpEAjIIkPAj6Uz1DaF5W+ZmnNsekRAyk+3Lm7DCkEdldRunmAMklLXDYSE0BHPyNZb6/O
+1fVccxPwFw6jSpxzyJ8=
+
+`pragma protect key_keyowner="Aldec", key_keyname="ALDEC15_001", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+ACw/whBd4sJPjEXsPWy+A9hsrulOjhl03yGnO0wIJb/8lOFB6tmCM94OcdNwiMaV6kg8YzX1Zq7/
+NE2RxoRW0a7WAr7xvZPy265UGSafgRDCpO1KBNNkYutsmHT7D2OLTvT4FaHp5hZFRk+z43Ve8ygQ
+YJTKyx5ivjb/80JLBvE8hnVCpYkZN6VnhMHuf1XLNa0oxWLQ2z+ODAbTE0KVd6D6DWycqrbcGtw9
+RfO96KL4+hS2NraPUOWRVGCJvHh+C9oFURQ8sSL1vIHuy9U+A+C/triRYJ4Yl8X5mPDgDSLb9GaP
+flIuoeMAprVt1E/Bi7vgnF6kuuRtRrRwCbGG1A==
+
+`pragma protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VELOCE-RSA", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`pragma protect key_block
+WhGTCsy16/t+nTOk+CGv7tpQem4v8f0JcfhtmHJKBQmUKRgMWECn1vAxv7cTlF5fBXBuNPE5ekvE
+eE5xvFBz6Hn8xUu09f8xFM1K5WhbovRkMP3+0G0ookHnjX6DsYKCCqav35emaqOkBS5JhVj2EBPk
+XLtGUbRCypldy9j1hdo=
+
+`pragma protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VERIF-SIM-RSA-2", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+HTqbg+eKkopQi5dj/L+szqmPwRpBkCcaMjACO+UpXthtee/no4xSMcGn8abIY3SPv4TzrnuqqXPm
+0AF2N3wLbDTLOGfRyerYPQtOSICnY0YK1FpPbRpt8J37qRX06v29OCgAKQCRzqcyktN979XHA61i
+y9kXKs0ecYFb/aEJn+r/Ms4/zkik5QDSibn9rXgrCIaAq3oV/qy4/eOC1I7HxFJ7pQLvD6TaOwrX
+4JOp3lWwPc+YVayAWfwfSM8th7MZKBhpSD1StLeBRJc4CJ5oDLwaMgHEFCXxx3pyxq8QdKSuHOu3
+Wi8mjTwcR+O/8mCaI/EQL04GZntygGZa6NRnQQ==
+
+`pragma protect key_keyowner="Real Intent", key_keyname="RI-RSA-KEY-1", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+o91QaUL83RhelLkEm4+751/SyYIekusmli7rQ/VnKAUITjkJaEGeiMiekUqrom206GlehlLCRUuJ
+Qk6ai4cQrpKj2AErAd0Y5kUpeM5RS+aWpFjtOYrSHMdr4rMfgbsw35qJ6v9hjgJLVLLd2hyabIYi
+/IO+Syqy221cIW0MUUpzoOJ9CjxdiirdkOfTk4p5NvXD0hVLjTWo5izC8MmrhTohoXTCLeDPBtni
+h9yjKz34xbfDJ73edDWDKZuzkcksNcD8JDufI8TXjti6zIBBimw59rFhS2J51ljYPnYfZPiVePJ5
+N7uOtLgm5YB9EYVkYBImzlegfvfeWKMlMPTN2Q==
+
+`pragma protect key_keyowner="Xilinx", key_keyname="xilinxt_2025.1-2029.x", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+lJKy9Zjha63A0h02ApuEz30etxi10kyaT0MM37kT8C079RoQxr/jzSdPRVB6DZEoEoxq3B3ZtFpY
+YjPONLB3n6tCjDMSDQ3C1I1mBthQK6OvvTRuHUxb1l9/aLvQKKbftHNrYBApn8VpMjP6CLucAxZp
++odccI1IV35j33TcUjek8yCrtxEmdzWv0t5wOEQA4WTFVG1fU6/a+jfGVGHnhJhasL7Jl0YilFPM
+HWd3rJlyr2xUSar0v6pd0AVRt6yFuPoCpA/gavX0kZRv+AugezxEfo89yWvJY2XTRZkZi3hMrZuv
+vLK4usOzcbsPeMWzlO01N6DMHirnppE7yicsAA==
+
+`pragma protect key_keyowner="Metrics Technologies Inc.", key_keyname="DSim", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+qZguQpkzQaubvif4ozJshLhSpVr4NjQRAvIToSXk4wKAhLoTGGfhff6h7uytylGeHmy/9jn719Sv
+HAjAigAvx8FgkAdQ9HshMaw6B/CLhf7qqwtfgiEb8k4WEUmEBTliot58LPV7jCEMD1VBzZWYR4K/
+F/3P7X3moGjkrFh9KcmMY5GwF7k9LuqZmEI6DK0O8ZCX0hTQnQ2olSPRWHDbVMSNk21ob6q2E7m5
+xpDVITSJEGo0sugVShTUXPzIS2aLKbIkU7M7Hafar7cSxwCvM01LmXbK2kk/TJ1BnxjpTLKgqxru
+qHGOZsfM5HZn/M3rQKeaLTsgoxJg0TzUyDcG2Q==
+
+`pragma protect key_keyowner="Atrenta", key_keyname="ATR-SG-RSA-1", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=384)
+`pragma protect key_block
+hKe8IASictRpxK+UNDyBjdExv+cunUPc6ZpI+7czTzAehV4HfB+YDHOd05j6V2WSrIfjaa5Yc1RS
+G3r38XeIaYh1ZL1ZSXdIVLclvWkAD0ZTUVklwYY6ca20tDHHAciXUrro3jg9kGe8H2Gojjw+VQZC
+vGGdV4/DF3pjMdpz4nyJJWNfnYLPmx19+G3AsjJsk77LkeQJ3ac7KA942yZdeDmv4Gv409a95Tsb
+ybgnN5fxmPfJ1KacG4k/Zu07i7vPA7/85FRrgptHJL0ytlZgmOydqGwz345i+KR6+tR6P3ZfO0s6
+zos96acnjsr2RnP6pIJ30EKJj+IMY98YqW+6wBHZ1tOwA0LCIHrVhIyGe0B5IXV4RAxNY/K/8cZ4
+j/W2apPE52Pk/hvYFtfyEVf1mS/lGq/t2LznNsZMt82q93Jb8hxwC6Zd8lrmm2hfqYfOAmlZmf6O
+EfYHOP1GurKAmfr07eaBzMSZGJa/fC0AncpmpYD7OL9jcP2lP5UBi+qa
+
+`pragma protect key_keyowner="Cadence Design Systems.", key_keyname="CDS_RSA_KEY_VER_1", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+HO+y/HjEaXV9is2kIeddm5ja325WYl9z3UGUIfNECIbhm1CsOvhNxo06AGFh3AtmMj1fkyl7FpO4
+5p6qJPGuMnf7KaoL2lbPdT1FmXinUUneD7TyneDl5s/cvecL9iNEtBuembSpR8uFQlqW3j5MnIU0
+UISBysTQ8EGO9RDHkRKXJVBUPunFpCoxViEHDwuLeOfZnsSUNCm1TQkVN6lCJVpqMXGrell2v+/D
++BJWT6gUeDiXDTY/zYKkdaf1QckERhcVJjNORVmQDjxTeDa6GJ1AmksSzrK2M3vTp9axAcWS5ak3
+FP7Oo1kxa1CXdzBltgltp8wxugADWHbPbfb6Kw==
+
+`pragma protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-PREC-RSA", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+CjdNXPB8v8syxh9JF9YxdMVXnoyuXKhbYX0QhnEodUvzhiAhorPvcsGo0r4dLqvYP2btj3HvQr2/
+cJW75Tmzadjh6ot3xNF6lWTJ+1DGLNpqLUIvd2N2CUL60JFiKrwiUDfM+fO5BmaX3uEDQudJP4jt
+F7LtogaV8Mfuj9KwDC5Q8o4+gnzDWLdjIbf05MJTbHQmK6GSDGnKjp+ozKGt+GjshterVCASSZQQ
+K/r6X4hPRWBT7Fw4OK8Ip9TkWUaoRSqatCn1+3G697g3bG0tNQBx/zaSt5hEW5NUf9JLj/HLvuG/
+dYywpZNpOv0EcWa429uEwuKOMRmy8kKii5/iwA==
+
+`pragma protect key_keyowner="Synplicity", key_keyname="SYNP15_1", key_method="rsa"
+`pragma protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`pragma protect key_block
+gFN6H6zDVo1aqYq8rnKnE8qLxcN22lIntIeeEFbF1nHGZqfdMb738Fdebuxa2YZPzzVjVURL1BXn
+spBDXrfLW/Lz7bsvA9nrvPfhTrJausz09y+9hptDuawXf8znJz7a2OzD/2iHw9UFc0C+w2QaL1nW
+WPs/yz3vxen4ysF9oSPvtz+/Vi/Sr3qT/ckIBJ3HW24C45QZuHHb758ig6ts63OZYjMhXKAyw+El
+V+LiKhICr1aRVIW2yOA+vec1L25LTBFHWHDh35JykA1AB/fP5W2Q76/TBtCfrICsvBRs/0qpeLsM
+rMmU8BNt0UCsZWHLfSGWVXA9CkCdAs+ZxFwr0Q==
+
+`pragma protect data_method = "AES128-CBC"
+`pragma protect encoding = (enctype = "BASE64", line_length = 76, bytes = 17472)
+`pragma protect data_block
+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
+`pragma protect end_protected
+`ifndef GLBL
+`define GLBL
+`timescale  1 ps / 1 ps
+
+module glbl ();
+
+    parameter ROC_WIDTH = 100000;
+    parameter TOC_WIDTH = 0;
+    parameter GRES_WIDTH = 10000;
+    parameter GRES_START = 10000;
+
+//--------   STARTUP Globals --------------
+    wire GSR;
+    wire GTS;
+    wire GWE;
+    wire PRLD;
+    wire GRESTORE;
+    tri1 p_up_tmp;
+    tri (weak1, strong0) PLL_LOCKG = p_up_tmp;
+
+    wire PROGB_GLBL;
+    wire CCLKO_GLBL;
+    wire FCSBO_GLBL;
+    wire [3:0] DO_GLBL;
+    wire [3:0] DI_GLBL;
+   
+    reg GSR_int;
+    reg GTS_int;
+    reg PRLD_int;
+    reg GRESTORE_int;
+
+//--------   JTAG Globals --------------
+    wire JTAG_TDO_GLBL;
+    wire JTAG_TCK_GLBL;
+    wire JTAG_TDI_GLBL;
+    wire JTAG_TMS_GLBL;
+    wire JTAG_TRST_GLBL;
+
+    reg JTAG_CAPTURE_GLBL;
+    reg JTAG_RESET_GLBL;
+    reg JTAG_SHIFT_GLBL;
+    reg JTAG_UPDATE_GLBL;
+    reg JTAG_RUNTEST_GLBL;
+
+    reg JTAG_SEL1_GLBL = 0;
+    reg JTAG_SEL2_GLBL = 0 ;
+    reg JTAG_SEL3_GLBL = 0;
+    reg JTAG_SEL4_GLBL = 0;
+
+    reg JTAG_USER_TDO1_GLBL = 1'bz;
+    reg JTAG_USER_TDO2_GLBL = 1'bz;
+    reg JTAG_USER_TDO3_GLBL = 1'bz;
+    reg JTAG_USER_TDO4_GLBL = 1'bz;
+
+    assign (strong1, weak0) GSR = GSR_int;
+    assign (strong1, weak0) GTS = GTS_int;
+    assign (weak1, weak0) PRLD = PRLD_int;
+    assign (strong1, weak0) GRESTORE = GRESTORE_int;
+
+    initial begin
+	GSR_int = 1'b1;
+	PRLD_int = 1'b1;
+	#(ROC_WIDTH)
+	GSR_int = 1'b0;
+	PRLD_int = 1'b0;
+    end
+
+    initial begin
+	GTS_int = 1'b1;
+	#(TOC_WIDTH)
+	GTS_int = 1'b0;
+    end
+
+    initial begin 
+	GRESTORE_int = 1'b0;
+	#(GRES_START);
+	GRESTORE_int = 1'b1;
+	#(GRES_WIDTH);
+	GRESTORE_int = 1'b0;
+    end
+
+endmodule
+`endif
