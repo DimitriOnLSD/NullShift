@@ -22,7 +22,9 @@
       "gain_1": "",
       "binaray_data_stream_1": "",
       "binary_data_stream_2": "",
-      "clk_wiz": ""
+      "clk_wiz": "",
+      "xlslice_0": "",
+      "mult_gen_2": ""
     },
     "ports": {
       "sys_clock": {
@@ -200,6 +202,44 @@
             "value": "true"
           }
         }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "5",
+        "xci_name": "fdm_xlslice_0_0",
+        "xci_path": "ip\\fdm_xlslice_0_0\\fdm_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "22"
+          },
+          "DIN_TO": {
+            "value": "7"
+          },
+          "DIN_WIDTH": {
+            "value": "23"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "mult_gen_2": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "ip_revision": "24",
+        "xci_name": "fdm_mult_gen_2_0",
+        "xci_path": "ip\\fdm_mult_gen_2_0\\fdm_mult_gen_2_0.xci",
+        "inst_hier_path": "mult_gen_2",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "PortAWidth": {
+            "value": "16"
+          },
+          "PortBWidth": {
+            "value": "16"
+          }
+        }
       }
     },
     "nets": {
@@ -212,13 +252,20 @@
           "mult_gen_1/CLK",
           "c_addsub_0/CLK",
           "binaray_data_stream_1/CLK",
-          "ask_mapper/CLK"
+          "ask_mapper/CLK",
+          "mult_gen_2/CLK"
+        ]
+      },
+      "ask_mapper_Q": {
+        "ports": [
+          "ask_mapper/Q",
+          "mult_gen_2/B"
         ]
       },
       "ask_modulator_m_axis_data_tdata": {
         "ports": [
           "ask_modulator/m_axis_data_tdata",
-          "mult_gen_1/A"
+          "mult_gen_2/A"
         ]
       },
       "binaray_data_stream_1_Q": {
@@ -231,6 +278,12 @@
         "ports": [
           "binary_data_stream_2/Q",
           "line_coder/D"
+        ]
+      },
+      "c_addsub_0_S": {
+        "ports": [
+          "c_addsub_0/S",
+          "xlslice_0/Din"
         ]
       },
       "mult_gen_0_P": {
@@ -273,6 +326,12 @@
         "ports": [
           "gain_1/dout",
           "mult_gen_0/A"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "channel_emulator/s_axis_data_tdata"
         ]
       }
     }
