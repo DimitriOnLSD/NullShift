@@ -70,3 +70,5 @@
 
 !README.md
 # End of https://www.toptal.com/developers/gitignore/api/vivado
+
+NullShift.sim/sim_1/behav/xsim/
