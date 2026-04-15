@@ -7,7 +7,7 @@
 ##	it might not be complete. In addition, XAPP 1165 should be followed.
 #########
 #Exclude all
-*
+*   
 !*/
 !.gitignore
 ###########################################################################
@@ -68,4 +68,5 @@
 !*.bmm
 !*.xmp
 
+!README.md
 # End of https://www.toptal.com/developers/gitignore/api/vivado
