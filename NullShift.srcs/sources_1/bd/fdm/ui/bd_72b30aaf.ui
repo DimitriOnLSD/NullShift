@@ -1,50 +1,53 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.975762",
-   "Default View_TopLeft":"-112,-182",
+   "Default View_ScaleFactor":"0.806055",
+   "Default View_TopLeft":"-530,-50",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port port-id_sys_clock -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
-preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
-preplace inst bin_data_stream_1 -pg 1 -lvl 2 -x 330 -y 300 -defaultsOSRD
-preplace inst ask_mapper -pg 1 -lvl 3 -x 550 -y 290 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 10 -x 2330 -y 180 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 270 -defaultsOSRD
-preplace inst ask_modulator -pg 1 -lvl 4 -x 800 -y 300 -defaultsOSRD
-preplace inst mult_gen_0 -pg 1 -lvl 5 -x 1080 -y 300 -defaultsOSRD
-preplace inst mult_gen_1 -pg 1 -lvl 6 -x 1300 -y 460 -defaultsOSRD
-preplace inst gain_ask -pg 1 -lvl 5 -x 1080 -y 480 -defaultsOSRD
-preplace inst bin_data_stream_2 -pg 1 -lvl 2 -x 330 -y 520 -defaultsOSRD
-preplace inst line_coder -pg 1 -lvl 3 -x 550 -y 480 -defaultsOSRD
-preplace inst ook_modulator -pg 1 -lvl 4 -x 800 -y 470 -defaultsOSRD
-preplace inst mult_gen_2 -pg 1 -lvl 5 -x 1080 -y 740 -defaultsOSRD
-preplace inst gain_ook -pg 1 -lvl 5 -x 1080 -y 620 -defaultsOSRD
-preplace inst mult_gen_3 -pg 1 -lvl 6 -x 1300 -y 600 -defaultsOSRD
-preplace inst c_addsub_0 -pg 1 -lvl 7 -x 1510 -y 520 -defaultsOSRD
-preplace inst fir_compiler_0 -pg 1 -lvl 9 -x 2040 -y 480 -defaultsOSRD
-preplace inst tvalid_gen -pg 1 -lvl 8 -x 1720 -y 590 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -240 -y 280 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -240 -y 250 -defaultsOSRD
+preplace inst bin_data_stream_1 -pg 1 -lvl 3 -x 340 -y 70 -defaultsOSRD
+preplace inst ask_mapper -pg 1 -lvl 4 -x 570 -y 450 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 11 -x 2370 -y 180 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -120 -y 270 -defaultsOSRD
+preplace inst ask_modulator -pg 1 -lvl 5 -x 820 -y 300 -defaultsOSRD
+preplace inst mult_gen_0 -pg 1 -lvl 6 -x 1090 -y 300 -defaultsOSRD
+preplace inst mult_gen_1 -pg 1 -lvl 7 -x 1310 -y 460 -defaultsOSRD
+preplace inst gain_ask -pg 1 -lvl 6 -x 1090 -y 480 -defaultsOSRD
+preplace inst bin_data_stream_2 -pg 1 -lvl 3 -x 340 -y 580 -defaultsOSRD
+preplace inst line_coder -pg 1 -lvl 4 -x 570 -y 650 -defaultsOSRD
+preplace inst ook_modulator -pg 1 -lvl 5 -x 820 -y 470 -defaultsOSRD
+preplace inst mult_gen_2 -pg 1 -lvl 6 -x 1090 -y 740 -defaultsOSRD
+preplace inst gain_ook -pg 1 -lvl 6 -x 1090 -y 620 -defaultsOSRD
+preplace inst mult_gen_3 -pg 1 -lvl 7 -x 1310 -y 600 -defaultsOSRD
+preplace inst c_addsub_0 -pg 1 -lvl 8 -x 1520 -y 520 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 10 -x 2060 -y 480 -defaultsOSRD
+preplace inst tvalid_gen -pg 1 -lvl 9 -x 1730 -y 590 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 2 -x 100 -y 100 -defaultsOSRD
+preplace inst c_counter_binary_1 -pg 1 -lvl 2 -x 100 -y 490 -defaultsOSRD
+preplace netloc ask_modulator_m_axis_data_tdata 1 5 6 970 110 N 110 N 110 N 110 N 110 N
+preplace netloc bin_data_stream_2_doutb 1 10 1 N 170
+preplace netloc c_addsub_0_S 1 8 3 1620 510 1830 270 N
+preplace netloc clk_wiz_0_clk_out1 1 1 10 0 20 230 450 460 550 690 220 950 380 1200 380 1410 430 1610 430 1840 50 N
+preplace netloc clk_wiz_0_locked 1 1 7 10 30 210 490 450 560 N 560 N 560 1190 680 1430
+preplace netloc fir_compiler_0_m_axis_data_tdata 1 10 1 2260 290n
+preplace netloc gain_ask_dout 1 6 1 N 480
+preplace netloc gain_ook_dout 1 6 1 N 620
+preplace netloc line_coder_douta 1 3 8 470 740 NJ 740 960 190 N 190 N 190 N 190 N 190 N
+preplace netloc mult_gen_0_P 1 6 5 1220 130 N 130 N 130 N 130 N
+preplace netloc mult_gen_1_P 1 7 4 1430 150 N 150 N 150 N
+preplace netloc mult_gen_2_P 1 6 5 1210 230 N 230 N 230 N 230 N
+preplace netloc mult_gen_3_P 1 7 4 1420 250 N 250 N 250 N
+preplace netloc ook_modulator_m_axis_data_tdata 1 5 6 990 210 N 210 N 210 N 210 N 210 N
+preplace netloc reset_1 1 0 1 -220 250n
 preplace netloc sys_clock_1 1 0 1 NJ 280
-preplace netloc reset_1 1 0 1 N 260
-preplace netloc clk_wiz_0_locked 1 1 6 210 180 430 570 N 570 980 560 1180 690 1420
-preplace netloc clk_wiz_0_clk_out1 1 1 9 200 170 440 390 660 220 940 420 1190 680 1410 430 1600 430 1840 60 N
-preplace netloc gain_ask_dout 1 5 1 N 480
-preplace netloc mult_gen_0_P 1 5 5 1210 140 N 140 N 140 N 140 N
-preplace netloc ask_mapper_douta 1 2 8 450 380 650 210 980 100 NJ 100 N 100 N 100 N 100 N
-preplace netloc ask_modulator_m_axis_data_tdata 1 4 6 970 120 N 120 N 120 N 120 N 120 N
-preplace netloc mult_gen_1_P 1 6 4 1400 160 N 160 N 160 N
-preplace netloc ook_modulator_m_axis_data_tdata 1 4 6 960 220 N 220 N 220 N 220 N 220 N
-preplace netloc line_coder_douta 1 2 8 450 580 NJ 580 950 200 N 200 N 200 N 200 N 200 N
-preplace netloc gain_ook_dout 1 5 1 N 620
-preplace netloc mult_gen_2_P 1 5 5 1200 240 N 240 N 240 N 240 N
-preplace netloc mult_gen_3_P 1 6 4 1390 260 N 260 N 260 N
-preplace netloc c_addsub_0_S 1 7 3 1610 510 1820 280 N
-preplace netloc bin_data_stream_1_doutb 1 1 9 230 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 N 80 N 80 N
-preplace netloc bin_data_stream_2_doutb 1 1 9 220 150 NJ 150 NJ 150 NJ 150 NJ 150 NJ 150 N 150 N 150 2240
-preplace netloc tvalid_gen_Q 1 7 2 1620 520 1830
-preplace netloc fir_compiler_0_m_axis_data_tdata 1 9 1 2240 300n
-levelinfo -pg 1 0 110 330 550 800 1080 1300 1510 1720 2040 2330 2420
-pagesize -pg 1 -db -bbox -sgen -120 0 2420 820
+preplace netloc tvalid_gen_Q 1 8 2 1630 520 1850
+preplace netloc ask_mapper_douta 1 3 8 470 210 NJ 210 980 90 NJ 90 NJ 90 NJ 90 NJ 90 N
+preplace netloc bin_data_stream_1_douta 1 2 9 240 -30 460J 70 N 70 N 70 N 70 N 70 N 70 N 70 N
+preplace netloc c_counter_binary_0_Q 1 2 9 220 -40 N -40 N -40 N -40 N -40 N -40 N -40 N -40 2250
+levelinfo -pg 1 -240 -120 100 340 570 820 1090 1310 1520 1730 2060 2370 2460
+pagesize -pg 1 -db -bbox -sgen -350 -60 2470 820
 "
 }
 {

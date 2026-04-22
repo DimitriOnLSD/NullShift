@@ -72,3 +72,51 @@
 # End of https://www.toptal.com/developers/gitignore/api/vivado
 
 NullShift.sim/sim_1/behav/xsim/
+NullShift.runs/synth_1/
+NullShift.runs/*
+
+
+# Vivado Logs and Journals
+*.jou
+*.log
+*.str
+*.pb
+
+# Vivado Project Directories (Generated/Temporary)
+.Xil/
+*.cache/
+*.hw/
+*.sim/
+*.runs/
+*.ip_user_files/
+*.dir/
+
+# Compressed Project Archives
+*.xpr.zip
+
+# Hardware Definition and Handoff Files (If generated dynamically)
+*.xsa
+*.hdf
+
+# Bitstreams and Programming Files (Use Git LFS or GitHub Releases for these)
+*.bit
+*.bin
+*.mcs
+*.prm
+*.ltx
+*.svf
+
+# Design Checkpoints (Can be hundreds of MBs)
+*.dcp
+
+# Vitis / Xilinx SDK (Eclipse-based) 
+.metadata/
+.sdk/
+*.elf
+*.bif
+
+# Backup and Temp Files
+*backup*
+*.bak
+*~
+*.swp
